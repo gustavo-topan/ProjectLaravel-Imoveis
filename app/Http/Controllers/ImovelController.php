@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\imoveis;
-use App\cliente;
+use App\Models\imoveis;
+use App\Models\cliente;
 use Validator;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Pagination\Paginator;

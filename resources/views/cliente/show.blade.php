@@ -1,4 +1,4 @@
-@extends('index.base')
+@extends('shared.base')
 @section('content')
     <div class="panel panel-default">
         <!-- Default panel contents -->

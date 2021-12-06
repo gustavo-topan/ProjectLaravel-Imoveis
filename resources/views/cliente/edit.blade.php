@@ -1,4 +1,4 @@
-@extends('index.base')
+@extends('shared.base')
 @section('content')
     @if($errors->any())
         <div class="alert alert-danger" role="alert">
