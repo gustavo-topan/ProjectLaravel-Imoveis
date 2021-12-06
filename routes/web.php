@@ -19,15 +19,15 @@ Route::get('/', function () {
 
 ///Rotas Imoveis
 
-// Route::get('imoveis/remove/{id}', 'ImovelController@remover')->name('imoveis.remove');
-// Route::resource('imoveis', ImovelController::class);
+Route::get('imoveis/remove/{id}', 'ImovelController@remover')->name('imoveis.remove');
+Route::resource('imoveis', ImovelController::class);
 
-// ///Rotas Clientes
-// Route::get('cliente/remove/{id}', 'ClienteController@remover')->name('cliente.remove');
-// Route::resource('cliente', ClienteController::class);
+///Rotas Clientes
+Route::get('cliente/remove/{id}', 'ClienteController@remover')->name('cliente.remove');
+Route::resource('cliente', ClienteController::class);
 
-// //-----------------------------------//
-// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-//     return view('dashboard');
-// })->name('dashboard');
+//-----------------------------------//
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
 

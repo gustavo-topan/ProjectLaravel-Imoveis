@@ -58,6 +58,17 @@
                 </div>
             </div>
         </div>
+
+        <h4>Imóveis</h4>
+        <hr>
+        <div class="form-group">
+            <label for="marca_id">Selecione o imóvel deste cliente</label>
+            <select class="form-control" name="marca_id" required>
+            @foreach($imoveis as $imovel)            
+                <option value="{{$imovel->id}}">{{$imovel->nome}}</option>            
+            @endforeach
+            </select>
+        </div>  
         <a href="{{ url()->previous() }}" class="btn btn-default">Voltar</a>
         <button type="submit" class="btn btn-primary">Cadastrar</button>
     </form>
