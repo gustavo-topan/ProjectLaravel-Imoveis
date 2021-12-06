@@ -62,8 +62,8 @@
         <h4>Imóveis</h4>
         <hr>
         <div class="form-group">
-            <label for="marca_id">Selecione o imóvel deste cliente</label>
-            <select class="form-control" name="marca_id" required>
+            <label for="imovel_id">Selecione o imóvel deste cliente</label>
+            <select class="form-control" name="imovel_id" required>
             @foreach($imoveis as $imovel)            
                 <option value="{{$imovel->id}}">{{$imovel->nome}}</option>            
             @endforeach
